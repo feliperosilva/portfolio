@@ -7,28 +7,28 @@ const Home = () => {
 
   return (
     <div>
-      <section id='home' className={styles.bg_home}>
-        <h1>Homepage</h1>
+      <section id='home' className={styles.home}>
+        <h1 className={styles.big_title}>Homepage</h1>
       </section>
 
-      <section id='about' className={styles.bg_about}>
-        <h1>About</h1>
-        <button onClick={() => navigate("/about")}>Go to page</button>
+      <section id='about' className={styles.about}>
+        <h1 className={styles.big_title}>About</h1>
+        <button onClick={() => navigate("/about")} className={styles.page_button}>Go to page</button>
       </section>
 
-      <section id='products' className={styles.bg_products}>
-        <h1>Products</h1>
-        <button onClick={() => navigate("/products")}>Go to page</button>
+      <section id='products' className={styles.products}>
+        <h1 className={styles.big_title}>Products</h1>
+        <button onClick={() => navigate("/products")} className={styles.page_button}>Go to page</button>
       </section>
 
-      <section id='courses' className={styles.bg_courses}>
-        <h1>Courses</h1>
-        <button onClick={() => navigate("/courses")}>Go to page</button>
+      <section id='courses' className={styles.courses}>
+        <h1 className={styles.big_title}>Courses</h1>
+        <button onClick={() => navigate("/courses")} className={styles.page_button}>Go to page</button>
       </section>
 
-      <section id='contact' className={styles.bg_contact}>
-        <h1>Contact</h1>
-        <button onClick={() => navigate("/contact")}>Go to page</button>
+      <section id='contact' className={styles.contact}>
+        <h1 className={styles.big_title}>Contact</h1>
+        <button onClick={() => navigate("/contact")} className={styles.page_button}>Go to page</button>
       </section>
       
     </div>

@@ -3,9 +3,11 @@ import styles from "../../styles/Courses.module.css"
 
 const Courses = () => {
   return (
-    <div>
-      <h1>This is the Course Page</h1>
-    </div>
+    <section>
+      <div className={styles.title}>
+        <h1>This is the Courses Page</h1>
+      </div>
+    </section>
   )
 }
 

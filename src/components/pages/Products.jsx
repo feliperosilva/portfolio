@@ -3,9 +3,11 @@ import styles from "../../styles/Products.module.css"
 
 const Products = () => {
   return (
-    <div>
-      <h1>This is the Products Page</h1>
-    </div>
+    <section>
+      <div className={styles.title}>
+        <h1>This is the Products Page</h1>
+      </div>
+    </section>
   )
 }
 
