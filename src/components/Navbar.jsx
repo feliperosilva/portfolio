@@ -32,21 +32,21 @@ const Navbar = () => {
                     <Link to="/#contact" className={styles.animated_link} onClick={closeMenu}>Contact</Link>
                 </li>      
                 <li>
-                    <button className={styles.button_mobile}>
+                    <button className={styles.button_mobile} onClick={() => alert('You clicked the mobile Login button!')}>
                         Login
                     </button>
                 </li>      
                 <li>
-                    <button className={styles.button_mobile}>
+                    <button className={styles.button_mobile} onClick={() => alert('You clicked the mobile Sign Up button!')}>
                         Sign Up
                     </button>
                 </li>      
             </ul>
             <div className={styles.nav_buttons}>
-                <button className='cta'>
+                <button onClick={() => alert('You clicked the Login button!')}>
                     Login
                 </button>        
-                <button className='cta'>
+                <button onClick={() => alert('You clicked the Sign Up button!')}>
                     Sign Up
                 </button> 
             </div>           
