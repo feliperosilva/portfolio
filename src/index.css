@@ -10,6 +10,11 @@ body {
     overflow-x: hidden;
 }
 
+body.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 section {
     min-height: 100vh;
     padding: 2rem;

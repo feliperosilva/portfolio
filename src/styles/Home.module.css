@@ -9,16 +9,32 @@
     background-color: aqua;
 }
 
+.about.dark {
+    background-color: darkcyan;
+}
+
 .products {
     background-color: red;
+}
+
+.products.dark {
+    background-color: darkgoldenrod;
 }
 
 .courses {
     background-color: greenyellow;
 }
 
+.courses.dark {
+    background-color: darkgreen;
+}
+
 .contact {
     background-color: yellow;
+}
+
+.contact.dark {
+    background-color: darkkhaki;
 }
 
 .big_title {
@@ -35,6 +51,11 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.page_button.dark {
+    background-color: white;
+    color: black;
 }
 
 @media (max-width: 767px) {

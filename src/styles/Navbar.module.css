@@ -11,6 +11,10 @@
     top: 0;
 }
 
+.navbar.dark {
+    background-color: darkred;
+}
+
 .logo {
     width: 140px;
     padding-left: 40px;
@@ -47,7 +51,15 @@
     display: inline-block;
 }
 
+.links.dark a {
+    color: white;
+}
+
 .links a:hover {
+    font-weight: bold;
+}
+
+.links.dark a:hover {
     font-weight: bold;
 }
 
@@ -60,6 +72,10 @@
     bottom: 0;
     background-color: black;
     transition: width 0.3s ease-in-out;
+}
+
+.animated_link.dark::after {
+    background-color: white;
 }
   
 .animated_link:hover::after {
@@ -88,6 +104,11 @@
     z-index: 1;
 }
 
+.nav_buttons.dark button{
+    background-color: lightsalmon;
+    color: black;
+}
+
 .nav_buttons button::before {
     content: "";
     position: absolute;
@@ -102,6 +123,80 @@
 
 .nav_buttons button:hover::before {
     left: 0;
+}
+
+.nav_buttons.dark button::before {
+    background-color: beige;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 1rem;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch::before {
+    content: 'off';
+    color: black;
+    left: -30px;
+    position: absolute;
+
+}
+
+.switch.dark::before {
+    color: white;
+
+}
+
+.switch::after {
+    content: 'on';
+    color: black;
+    right: -25px;
+    position: absolute;
+    
+}
+
+.switch.dark::after {
+    color: white;
+
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: black;
+    border-radius: 34px;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: white;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(20px);
+    background-color: black;
 }
 
 @media (max-width: 767px) {
@@ -142,6 +237,11 @@
         box-sizing: border-box;
     }
 
+    .links.dark {
+        background-color: darkred;
+        border-top: 1px solid white;
+    }
+
     .links.menu_open, .button_mobile {
         display: flex;
     }
@@ -158,6 +258,11 @@
         font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
         font-size: 16px;
+    }
+
+    .button_mobile.dark {
+        background-color: lightsalmon;
+        color: black;
     }
 
     .links {

@@ -5,7 +5,7 @@ import Contact from "./components/pages/Contact";
 import Courses from "./components/pages/Courses";
 import Products from "./components/pages/Products";
 import Home from "./components/pages/Home";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const ScrollToSection = () => {
   const location = useLocation();
@@ -24,17 +24,26 @@ const ScrollToSection = () => {
 };
 
 function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('theme') === 'dark';
+  });
+
+  useEffect(() => {
+    document.body.className = darkMode ? 'dark' : '';
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
+
   return (
     <div className="App">
       <Router>
         <ScrollToSection /> 
-        <Navbar />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
-          <Route path="/" element= {<Home />} />
-          <Route path="/about" element= {<About />} />
-          <Route path="/contact" element= {<Contact />} />
-          <Route path="/courses" element= {<Courses />} />
-          <Route path="/products" element= {<Products />} />
+          <Route path="/" element= {<Home darkMode={darkMode} />} />
+          <Route path="/about" element= {<About darkMode={darkMode} />} />
+          <Route path="/contact" element= {<Contact darkMode={darkMode} />} />
+          <Route path="/courses" element= {<Courses darkMode={darkMode} />} />
+          <Route path="/products" element= {<Products darkMode={darkMode} />} />
         </Routes>
       </Router>
         
