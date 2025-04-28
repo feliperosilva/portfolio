@@ -144,9 +144,9 @@
 }
 
 .switch::before {
-    content: 'off';
+    content: 'Light';
     color: black;
-    left: -30px;
+    left: -45px;
     position: absolute;
 
 }
@@ -157,9 +157,9 @@
 }
 
 .switch::after {
-    content: 'on';
+    content: 'Dark';
     color: black;
-    right: -25px;
+    right: -40px;
     position: absolute;
     
 }
