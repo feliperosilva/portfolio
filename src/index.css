@@ -9,11 +9,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: #15152c;
-}
-
-body.dark {
-    background-color: #000000;
-    color: #ffffff;
+    color: #fff;
 }
 
 section {

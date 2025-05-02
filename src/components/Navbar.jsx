@@ -23,19 +23,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
             <ul className={`${styles.links} ${isOpen ? styles.menu_open : ''} ${darkMode ? styles.dark : ''}`}>
                 <li>
-                    <Link to="/#about" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Home</Link>
+                    <Link to="/#home" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Home</Link>
                 </li>      
                 <li>
-                    <Link to="/#about" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>About</Link>
+                    <Link to="/#about" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>About me</Link>
                 </li>      
                 <li>
-                    <Link to="/#products" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Products</Link>
+                    <Link to="/#products" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Projects</Link>
                 </li>      
                 <li>
-                    <Link to="/#courses" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Courses</Link>
+                    <Link to="/#courses" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Technologies</Link>
                 </li>      
                 <li>
-                    <Link to="/#contact" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Contact</Link>
+                    <Link to="/#contact" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Contact me</Link>
                 </li>
             </ul>
             <div className={styles.buttons_lang}>

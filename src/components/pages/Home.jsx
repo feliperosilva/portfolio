@@ -11,7 +11,7 @@ const Home = ({ darkMode }) => {
       <section id='home' className={styles.home}>
         <div className={styles.headline}>
           <h2 className={styles.entry_line}>From Pianist to Web Developer</h2>
-          <h1 className={styles.title}>Hi, I am Felipe Silva</h1>
+          <h1 className={styles.title}>&lt; Hi, I am Felipe Silva /&gt;</h1>
           <p className={styles.description}>Blending creativity and technology to build engaging digital experiences</p>
         </div>
         <div className={styles.head_photo}>
