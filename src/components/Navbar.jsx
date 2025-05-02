@@ -23,6 +23,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
             <ul className={`${styles.links} ${isOpen ? styles.menu_open : ''} ${darkMode ? styles.dark : ''}`}>
                 <li>
+                    <Link to="/#about" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Home</Link>
+                </li>      
+                <li>
                     <Link to="/#about" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>About</Link>
                 </li>      
                 <li>

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import styles from "../../styles/Home.module.css"
+import photo from "../../assets/foto-felipe.png"
 
 
 const Home = ({ darkMode }) => {
@@ -8,7 +9,15 @@ const Home = ({ darkMode }) => {
   return (
     <div>
       <section id='home' className={styles.home}>
-        <h1 className={styles.big_title}>Homepage</h1>
+        <div className={styles.headline}>
+          <h2 className={styles.entry_line}>From Pianist to Web Developer</h2>
+          <h1 className={styles.title}>Hi, I am Felipe Silva</h1>
+          <p className={styles.description}>Blending creativity and technology to build engaging digital experiences</p>
+        </div>
+        <div className={styles.head_photo}>
+          <img src={photo} alt="Felipe photo" />
+        </div>
+        
       </section>
 
       <section id='about' className={`${styles.about} ${darkMode ? styles.dark : ''}`}>

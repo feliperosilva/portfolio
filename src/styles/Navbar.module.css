@@ -8,6 +8,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    margin-top: 15px;
 }
 
 .navbar.dark {
@@ -16,11 +17,15 @@
 
 .logo {
     text-decoration: none;
-    color: rgb(99, 61, 160);
-    font-size: 24px;
+    font-size: 32px;
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-style: normal;
+    background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .hamburger {
@@ -37,7 +42,7 @@
     align-items: center;
     list-style-type: none;
     text-decoration: none;
-    border: 2px solid rgb(99, 61, 160);
+    border: 2px solid #fff;
     border-radius: 30px;
     max-height: 50px;
     padding-inline-start: 0;
@@ -53,11 +58,12 @@
 
 .page_link {
     font-size: 17px;
-    color: rgb(99, 61, 160);
+    color: #fff;
     text-decoration: none;
     position: relative;
     display: inline-block;
     padding-bottom: 2px;
+    font-weight: bold;
 }
 
 .page_link::after {
@@ -65,9 +71,9 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    left: 0;
+    left: -15%;
     bottom: 0;
-    background-color: rgb(99, 61, 160);
+    background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
     transition: width 0.3s ease-in-out;
 }
 
@@ -76,7 +82,7 @@
 }
   
 .page_link:hover::after {
-    width: 100%;
+    width: 130%;
 }
 
 .buttons_lang {
@@ -86,10 +92,11 @@
 
 .buttons_lang button{
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    width: 65px;
+    width: 75px;
     height: 35px;
     color: rgb(99, 61, 160);
     background-color: white;
