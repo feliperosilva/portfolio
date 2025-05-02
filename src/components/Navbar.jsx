@@ -40,10 +40,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </ul>
             <div className={styles.buttons_lang}>
                 <button className={styles.button_pt}>
-                    PT <img src={ptFlag} alt="Portuguese flag" style={{ width: '20px', marginLeft: '5px' }} /> 
+                    PT <img src={ptFlag} alt="Portuguese flag" style={{ width: '24px', height: '24px', marginLeft: '5px' }} /> 
                 </button>
                 <button className={styles.button_en}>
-                    EN <img src={gbFlag} alt="English flag" style={{ width: '20px', marginLeft: '5px' }} />
+                    EN <img src={gbFlag} alt="English flag" style={{ width: '24px', height: '24', marginLeft: '5px' }} />
                 </button>
             </div>
         </nav>    
