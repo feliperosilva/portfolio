@@ -6,6 +6,7 @@ import Technologies from "./components/pages/Technologies";
 import Projects from "./components/pages/Projects";
 import Home from "./components/pages/Home";
 import { useEffect, useState } from "react";
+import './i18n'
 
 const ScrollToSection = () => {
   const location = useLocation();

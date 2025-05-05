@@ -1,14 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from "../styles/Navbar.module.css";
 import ptFlag from "../assets/flag-pt.png"
 import gbFlag from "../assets/flag-gb.png"
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
-const Navbar = ({ darkMode, setDarkMode }) => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
+
+    const { t } = useTranslation();
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -72,10 +76,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 </li>
             </ul>
             <div className={styles.buttons_lang}>
-                <button className={styles.button_pt}>
+                <button className={styles.button_pt} onClick={() => i18n.changeLanguage('pt')}>
                     PT <img src={ptFlag} alt="Portuguese flag" style={{ width: '24px', height: '24px', marginLeft: '5px' }} /> 
                 </button>
-                <button className={styles.button_en}>
+                <button className={styles.button_en} onClick={() => i18n.changeLanguage('en')}>
                     EN <img src={gbFlag} alt="English flag" style={{ width: '24px', height: '24', marginLeft: '5px' }} />
                 </button>
             </div>
