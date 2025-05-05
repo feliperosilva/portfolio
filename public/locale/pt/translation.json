@@ -1,3 +1,17 @@
 {
-    "entry": "De Pianista a Desenvolvedor Web"
+    "home": "Início",
+    "about_me": "Sobre mim",
+    "projects": "Projetos",
+    "technologies": "Tecnologias",
+    "contact_me": "Contacto",
+    "entry": "De Pianista a Desenvolvedor Web",
+    "title": "Olá, sou o Felipe Silva",
+    "description": "Unindo criatividade e tecnologia para criar experiências digitais inspiradoras",
+    "about": {
+        "description": {
+            "h1": "Das Teclas do Piano para os Atalhos do Teclado",
+            "p1": "Depois de mais de 15 anos a tocar, ensinar e perseguir a perfeição pelas 88 teclas, decidi que estava na hora de um novo tipo de código. Com dois mestrados em música clássica e um metrónomo gasto pelo tempo, troquei o Chopin pelo Python e mergulhei no mundo do desenvolvimento web — onde depurar erros é o novo ler à primeira vista.",
+            "p2": "Hoje em dia, em vez de recitais e ensaios, encontras-me a construir sites, a escrever código limpo e a aprender novas tecnologias com a mesma disciplina com que antes estudava Bach. As salas de concerto mudaram, é verdade — mas a paixão pela criatividade e pela resolução de problemas continua viva. Só que agora... com um pouco mais de cafeína."
+        }
+    }
 }

@@ -39,7 +39,7 @@ const Navbar = () => {
                         closeMenu();
                         scrollToSection ('home');
                         }}>
-                            Home
+                            {t('home')}
                     </Link>
                 </li>      
                 <li>
@@ -47,7 +47,7 @@ const Navbar = () => {
                         closeMenu();
                         scrollToSection ('about');
                         }}>
-                            About me
+                            {t('about_me')}
                     </Link>
                 </li>      
                 <li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         closeMenu();
                         scrollToSection ('projects');
                         }}>
-                            Projects
+                            {t('projects')}
                     </Link>
                 </li>      
                 <li>
@@ -63,7 +63,7 @@ const Navbar = () => {
                         closeMenu();
                         scrollToSection ('technologies');
                         }}>
-                            Technologies
+                            {t('technologies')}
                     </Link>
                 </li>      
                 <li>
@@ -71,7 +71,7 @@ const Navbar = () => {
                         closeMenu();
                         scrollToSection ('contact');
                         }}>
-                            Contact me
+                            {t('contact_me')}
                     </Link>
                 </li>
             </ul>

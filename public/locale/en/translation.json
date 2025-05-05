@@ -1,3 +1,17 @@
 {
-    "entry": "From Pianist to Web Developer"
+    "home": "Home",
+    "about_me": "About me",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "contact_me": "Contact me",
+    "entry": "From Pianist to Web Developer",
+    "title": "Hi, I am Felipe Silva",
+    "description": "Blending creativity and technology to build engaging digital experiences",
+    "about": {
+        "description": {
+            "h1": "From Piano Keys to Keyboard Shortcuts",
+            "p1": "After over 15 years of performing, teaching, and chasing perfection across 88 keys, I decided it was time for a different kind of code. Armed with two master’s degrees in classical music and a well-worn metronome, I traded Chopin for Python and stepped into the world of web development — where debugging is the new sight-reading.",
+            "p2": "These days, instead of recitals and rehearsals, you'll find me building websites, writing clean code, and learning new technologies with the same discipline I once applied to Bach. While the concert halls have changed, the passion for creativity and problem-solving remains the same — just in a slightly more caffeinated setting."
+        }
+    }
 }
