@@ -1,4 +1,39 @@
-.title h1 {
-    padding-top: 150px;
-    font-size: 50px;
+.about_section {
+    padding: 0px 150px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.picture img {
+    width: 450px;
+    height: 450px;
+    border-radius: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_description h1 {
+    font-size: 32px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about_description p {
+    font-size: 18px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
 }

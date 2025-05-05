@@ -13,9 +13,9 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     padding: 2rem;
-    scroll-margin-top: 80px; /* Adjust if navbar is fixed */
+    scroll-margin-top: 60px; /* Adjust if navbar is fixed */
 }
   
 html {

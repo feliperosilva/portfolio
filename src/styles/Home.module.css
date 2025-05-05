@@ -31,10 +31,6 @@
     font-size: 20px;
 }
 
-.contact.dark {
-    background-color: darkkhaki;
-}
-
 .big_title {
     font-size: 100px;
 }
@@ -49,11 +45,6 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-}
-
-.page_button.dark {
-    background-color: white;
-    color: black;
 }
 
 @media (max-width: 767px) {
