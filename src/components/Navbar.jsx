@@ -76,10 +76,10 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className={styles.buttons_lang}>
-                <button className={styles.button_pt} onClick={() => i18n.changeLanguage('pt')}>
+                <button className={`${styles.button_pt} ${i18n.language === 'pt' ? styles.active_lang : ''}`} onClick={() => i18n.changeLanguage('pt')}>
                     PT <img src={ptFlag} alt="Portuguese flag" style={{ width: '24px', height: '24px', marginLeft: '5px' }} /> 
                 </button>
-                <button className={styles.button_en} onClick={() => i18n.changeLanguage('en')}>
+                <button className={`${styles.button_en} ${i18n.language === 'en' ? styles.active_lang : ''}`} onClick={() => i18n.changeLanguage('en')}>
                     EN <img src={gbFlag} alt="English flag" style={{ width: '24px', height: '24', marginLeft: '5px' }} />
                 </button>
             </div>

@@ -79,7 +79,7 @@
 
 .buttons_lang {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .buttons_lang button{
@@ -99,6 +99,11 @@
     font-size: 18px;
     cursor: pointer;
     z-index: 1;
+}
+
+.active_lang {
+    box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 @media (max-width: 767px) {
