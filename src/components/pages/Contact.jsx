@@ -1,7 +1,9 @@
 import React, {useState, usseState} from 'react'
 import styles from "../../styles/Contact.module.css"
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const {t} = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,11 +23,11 @@ const Contact = () => {
 
   return (
     <section id='contact' className={styles.contact}>
-      <h1>Contact</h1>
-      <h4>Send a message if you have questions, feedback or just feeling lonely 😜</h4>
+      <h1>{t('contact')}</h1>
+      <h4>{t('contact_subtitle')}</h4>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.form_fields}>
-          <label className={styles.label}>Name:</label>
+          <label className={styles.label}>{t('name')}:</label>
           <input
             type="text"
             name="name"
@@ -47,7 +49,7 @@ const Contact = () => {
         </div>
 
         <div className={styles.form_fields}>
-        <label className={styles.label}>Phone:</label>
+        <label className={styles.label}>{t('phone')}:</label>
           <input
             type="text"
             name="phone"
@@ -58,7 +60,7 @@ const Contact = () => {
         </div>
 
         <div className={styles.form_fields}>
-          <label className={styles.label}>Message:</label>
+          <label className={styles.label}>{t('message')}:</label>
           <textarea
             name="message"
             value={formData.message}
@@ -67,7 +69,7 @@ const Contact = () => {
           />
         </div>
 
-        <button type="submit" className={styles.send} onClick={handleSubmit}>Send</button>
+        <button type="submit" className={styles.send} onClick={handleSubmit}>{t('send')}</button>
       </form>
     </section>
     

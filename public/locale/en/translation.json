@@ -13,5 +13,11 @@
             "p1": "After over 15 years of performing, teaching, and chasing perfection across 88 keys, I decided it was time for a different kind of code. Armed with two master’s degrees in classical music and a well-worn metronome, I traded Chopin for Python and stepped into the world of web development — where debugging is the new sight-reading.",
             "p2": "These days, instead of recitals and rehearsals, you'll find me building websites, writing clean code, and learning new technologies with the same discipline I once applied to Bach. While the concert halls have changed, the passion for creativity and problem-solving remains the same — just in a slightly more caffeinated setting."
         }
-    }
+    },
+    "contact": "Contact",
+    "contact_subtitle": "Send a message if you have questions, feedbacks or just feeling lonely 😜",
+    "name": "Name",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send"
 }
