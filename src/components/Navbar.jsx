@@ -10,10 +10,17 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
 
-    return (
-        <nav className={`${styles.navbar} ${darkMode ? styles.dark : ''}`}>
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-            <Link to="/#home" className={styles.logo}>
+    return (
+        <nav className={styles.navbar}>
+
+            <Link onClick={() => scrollToSection ('home')} className={styles.logo}>
                 <span>
                     &lt;/&gt; Felipe Silva
                 </span>
@@ -21,21 +28,47 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className={styles.hamburger} onClick={toggleMenu}>
                 ☰
             </div>
-            <ul className={`${styles.links} ${isOpen ? styles.menu_open : ''} ${darkMode ? styles.dark : ''}`}>
+            <ul className={`${styles.links} ${isOpen ? styles.menu_open : ''}`}>
                 <li>
-                    <Link to="/#home" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Home</Link>
+                    <Link className={styles.page_link} 
+                        onClick={() => {
+                        closeMenu();
+                        scrollToSection ('home');
+                        }}>
+                            Home
+                    </Link>
                 </li>      
                 <li>
-                    <Link to="/#about" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>About me</Link>
+                    <Link className={styles.page_link} onClick={() => {
+                        closeMenu();
+                        scrollToSection ('about');
+                        }}>
+                            About me
+                    </Link>
                 </li>      
                 <li>
-                    <Link to="/#products" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Projects</Link>
+                    <Link className={styles.page_link} onClick={() => {
+                        closeMenu();
+                        scrollToSection ('projects');
+                        }}>
+                            Projects
+                    </Link>
                 </li>      
                 <li>
-                    <Link to="/#courses" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Technologies</Link>
+                    <Link className={styles.page_link} onClick={() => {
+                        closeMenu();
+                        scrollToSection ('technologies');
+                        }}>
+                            Technologies
+                    </Link>
                 </li>      
                 <li>
-                    <Link to="/#contact" className={`${styles.page_link} ${darkMode ? styles.dark : ''}`} onClick={closeMenu}>Contact me</Link>
+                    <Link className={styles.page_link} onClick={() => {
+                        closeMenu();
+                        scrollToSection ('contact');
+                        }}>
+                            Contact me
+                    </Link>
                 </li>
             </ul>
             <div className={styles.buttons_lang}>
