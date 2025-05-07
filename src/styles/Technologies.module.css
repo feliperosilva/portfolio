@@ -1,4 +1,58 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title h1 {
-    padding-top: 150px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
     font-size: 50px;
+    background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.title h4 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tech_card {
+    padding: 15px;
+    border: .5px solid #413e42;
+    border-radius: 15px;
+    background-color: rgb(74, 63, 109);
+}
+
+.tech_card:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.description {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
 }

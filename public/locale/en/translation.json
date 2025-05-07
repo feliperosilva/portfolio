@@ -19,5 +19,14 @@
     "name": "Name",
     "phone": "Phone",
     "message": "Message",
-    "send": "Send"
+    "send": "Send",
+    "tech_h4": "Here are some of the technologies I have been working recently",
+    "python": "For backend development and scripting",
+    "js": "To make the web interactive",
+    "react": "Library for building dynamic frontends",
+    "html": "Structure of the web — the bones of every page",
+    "css": "Styling and layout magic for responsive designs",
+    "django": "Robust backend framework for full-featured apps",
+    "flask": "Lightweight framework for quick API and backend builds",
+    "sqlite": "Simple, file-based database for smaller apps and testing"
 }
