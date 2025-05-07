@@ -33,9 +33,9 @@
 
 .tech_card {
     padding: 15px;
-    border: .5px solid #413e42;
     border-radius: 15px;
     background-color: rgb(74, 63, 109);
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .tech_card:hover {
