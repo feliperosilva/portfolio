@@ -1,4 +1,79 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title h1 {
-    padding-top: 150px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
     font-size: 50px;
+    background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-top: 10px;
+}
+
+.projects {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proj_card > div {
+    flex: 1;
+}
+
+.proj_card {
+    display: flex;
+    gap: 40px;
+    padding: 40px 60px;
+    margin-bottom: 50px;
+    max-width: 70%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(
+    90deg,
+    rgb(124, 92, 240, 0.1),  /* light purple */
+    rgb(155, 127, 255, 0.1), 
+    rgba(184, 192, 255, 0.1)
+    );
+    border: none;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proj_text h1 {
+    font-size: 32px;
+    font-style: italic;
+}
+
+.proj_text p {
+    text-align: justify;
+}
+
+.proj_img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.odd {
+    flex-direction: row-reverse;
 }

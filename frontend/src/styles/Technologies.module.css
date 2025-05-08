@@ -16,6 +16,7 @@
     background-clip: text;
     color: transparent;
     margin: 0;
+    margin-top: 10px;
 }
 
 .title h4 {

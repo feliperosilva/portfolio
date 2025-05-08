@@ -28,5 +28,19 @@
     "css": "Estilização e layout para designs responsivos",
     "django": "Framework robusto para aplicações completas no backend",
     "flask": "Framework leve para criar APIs e backends rapidamente",
-    "sqlite": "Base de dados simples, baseada em ficheiros, para apps pequenas e testes"
+    "sqlite": "Base de dados simples, baseada em ficheiros, para apps pequenas e testes",
+    "proj_descript": {
+        "1": {
+            "name": "MindScope",
+            "description": "Uma landing page moderna para uma startup de saúde mental, com uma experiência de utilização limpa, ícones SVG animados e um formulário de contacto integrado com o Google Sheets e notificações por email."
+        },
+        "2": {
+            "name": "QuickCart",
+            "description": "Um protótipo minimalista de e-commerce para produtos digitais com integração do Stripe Checkout, funcionalidade de lista de desejos e um layout responsivo optimizado para dispositivos móveis."
+        },
+        "3": {
+            "name": "EduWave",
+            "description": "Um site de página única para uma plataforma de cursos online, com cartões de cursos, biografias de formadores e carregamento dinâmico de conteúdos com React e Django REST API."
+        }
+    }
 }
