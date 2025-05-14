@@ -74,8 +74,16 @@ const Navbar = () => {
                             {t('contact_me')}
                     </Link>
                 </li>
+                <div className={`${styles.buttons_lang_mobile} ${isOpen ? styles.menu_open : ''}`}>
+                    <button className={`${styles.button_pt} ${i18n.language === 'pt' ? styles.active_lang : ''}`} onClick={() => i18n.changeLanguage('pt')}>
+                        PT <img src={ptFlag} alt="Portuguese flag" style={{ width: '24px', height: '24px', marginLeft: '5px' }} /> 
+                    </button>
+                    <button className={`${styles.button_en} ${i18n.language === 'en' ? styles.active_lang : ''}`} onClick={() => i18n.changeLanguage('en')}>
+                        EN <img src={gbFlag} alt="English flag" style={{ width: '24px', height: '24', marginLeft: '5px' }} />
+                    </button>
+                </div>
             </ul>
-            <div className={styles.buttons_lang}>
+            <div className={`${styles.buttons_lang} ${isOpen ? styles.menu_open : ''}`}>
                 <button className={`${styles.button_pt} ${i18n.language === 'pt' ? styles.active_lang : ''}`} onClick={() => i18n.changeLanguage('pt')}>
                     PT <img src={ptFlag} alt="Portuguese flag" style={{ width: '24px', height: '24px', marginLeft: '5px' }} /> 
                 </button>

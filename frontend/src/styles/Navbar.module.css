@@ -104,60 +104,84 @@
     z-index: 1;
 }
 
+.buttons_lang_mobile {
+    display: none;
+}
+
 .active_lang {
     box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.8);
     transition: box-shadow 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {      
     .navbar {
-        height: 100px;
+        justify-content: space-between; /* logo left, hamburger right */
+        padding: 0px 30px;
+        height: 90px;     
     }
 
-    .navbar li {
-        padding: 15px;
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
     }
 
     .logo {
-        width: 100px;
-        padding-left: 20px;
-        font-size: 20px;
-    }    
+        font-size: 24px;
+    }
     
-    .hamburger {
-        display: block;
-        margin-right: 20px;
-        font-size: 16px;
-        font-weight: bold;
-        border: solid 2px;
-        border-radius: 5px;
-        padding: 3px;
-        color: #fff;
-    }
-
     .links {
         display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        flex-direction: column;
-        top: 100px;
+        top: 90px; /* aligns directly below fixed navbar */
         left: 0;
-        background: beige;
         width: 100%;
-        padding: 0;
-        border-top: 1px solid black;
+        max-height: calc(100vh - 100px); /* fills rest of screen */
+        background-color: #15152c;
+        border-radius: 0;
+        border: none !important;
+        z-index: 999; /* below navbar which is 1000 */
         margin: 0;
-        box-sizing: border-box;
+        border-top: 3px solid #fff !important;
+        border-bottom: 3px solid #fff !important;
     }
 
-    .links.menu_open, .button_mobile {
+    .links li {
+        padding: 20px !important;
+        margin: 0.5rem 0;
+    }
+
+    .menu_open {
+        display: flex !important;
+    }
+    
+    .page_link {
+        font-size: 20px;
+    }
+
+    .buttons_lang {
+        display: none !important;
+    }
+
+    .buttons_lang_mobile {
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .buttons_lang_mobile button{
         display: flex;
-    }
-
-    .links {
-        flex-direction: column;
-    }
-
-    .nav_buttons {
-        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        height: 35px;
+        color: #fff;
+        background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
     }
 }

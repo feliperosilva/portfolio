@@ -7,7 +7,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className={styles.home_container}>
       <section id='home' className={styles.home}>
         <div className={styles.headline}>
           <h2 className={styles.entry_line}>{t('entry')}</h2>
@@ -15,7 +15,7 @@ const Home = () => {
           <p className={styles.description}>{t('description')}</p>
         </div>
         <div className={styles.head_photo}>
-          <img src={photo} alt="Felipe photo" />
+          <img className={styles.photo} src={photo} alt="Felipe photo" />
         </div>
         
       </section>
