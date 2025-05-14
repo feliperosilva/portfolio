@@ -81,3 +81,17 @@
     border: none;
     border-radius: 50px;
 }
+
+@media (max-width: 767px) {
+    .form_fields input, .form_fields textarea {
+        width: 70vw;
+    }
+
+    .send {
+        width: 70vw;
+    }
+
+    .contact h4 {
+        text-align: center;
+    }
+}
