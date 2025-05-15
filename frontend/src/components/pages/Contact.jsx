@@ -1,9 +1,12 @@
-import React, {useState, usseState} from 'react'
+import { useState } from 'react'
 import styles from "../../styles/Contact.module.css"
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 const Contact = () => {
   const {t} = useTranslation();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,10 +19,32 @@ const Contact = () => {
     setFormData(prev => ({...prev, [name]: value}));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData)
-  }
+    setIsSubmitting(true);
+
+    try {
+      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      console.log('Form submitted:', formData);
+
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      setIsSubmitting(false);
+    } catch (error) {
+      console.log('Error sendind data:', error);
+
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      setIsSubmitting(false);
+    }
+
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    })
+  };
 
   return (
     <section id='contact' className={styles.contact}>
@@ -69,7 +94,14 @@ const Contact = () => {
           />
         </div>
 
-        <button type="submit" className={styles.send} onClick={handleSubmit}>{t('send')}</button>
+        <button
+          type="submit" 
+          className={`${styles.send} ${isSubmitting ? styles.disabled : ''}`}
+          onClick={handleSubmit}
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? t('sending') : t('send')}
+        </button>
       </form>
     </section>
     
