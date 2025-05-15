@@ -24,7 +24,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await axios.post('https://portfolio-backend-h5k2.onrender.com/api/contact', formData);
       console.log('Form submitted:', formData);
 
       await new Promise(resolve => setTimeout(resolve, 2000));
