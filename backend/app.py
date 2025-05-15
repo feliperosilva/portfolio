@@ -21,7 +21,8 @@ mail = Mail(app)
 csrf = CSRFProtect(app)
 
 CORS(app, origins=[
-    'http://localhost:5173'
+    'http://localhost:5173',
+    'https://portfolio-fy8k.onrender.com'
 ])
 
 @csrf.exempt
